@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: rgb(88, 88, 88);
+}
+
 #nav-bar {
-  background-color: hsla(0, 0%, 12%, 0.884);
+  background-color: rgb(49, 49, 49);
   height: 10rem;
   width: 100%;
   display: flex;
@@ -18,32 +22,33 @@ html {
 #nav-title {
   margin-left: 2rem;
   font-size: 5rem;
-  color: hsl(37, 23%, 89%);
+  color: rgb(233, 233, 233);
 }
 
 #board-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
-  margin-top: 15rem;
-  width: 80rem;
-  height: 80rem;
+  margin-top: 10rem;
+  width: 60rem;
+  height: 60rem;
+  border: 1px rgb(48, 44, 40) solid;
 }
 
-#board-piece {
-  background-color: rgb(238, 220, 208);
-  padding: 15rem;
+.board-piece {
+  background-color: #9ab8e4;
+  width: 20rem;
+  height: 20rem;
   text-align: center;
+  border: 2px rgb(48, 44, 40) solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.center-piece {
-  border: 5px black solid;
-}
-.center-end {
-  border-left: 5px black solid;
-  border-right: 5px black solid;
-}
-.center-side {
-  border-top: 5px black solid;
-  border-bottom: 5px black solid;
+
+.placeX {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 10rem;
 }
