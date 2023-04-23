@@ -11,9 +11,10 @@ body {
   background-color: rgb(88, 88, 88);
 }
 
+/* NAV BAR  */
 #nav-bar {
   background-color: rgb(49, 49, 49);
-  height: 10rem;
+  height: 8rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,15 +25,30 @@ body {
   font-size: 5rem;
   color: rgb(233, 233, 233);
 }
+/* GAME AREA */
+#gameArea {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+}
+/* MENU AREA */
+#menuContainer {
+  height: 60rem;
+  width: 30rem;
+  background-color: rgb(49, 49, 49);
+  margin-top: 5rem;
+  margin-left: 10rem;
+  border: 4px #9ab8e4 solid;
+  display: none;
+}
 
 #board-container {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 60rem;
   height: 60rem;
-  border: 1px rgb(48, 44, 40) solid;
+  border: 2px rgb(48, 44, 40) solid;
 }
 
 .board-piece {

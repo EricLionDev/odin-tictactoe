@@ -10,9 +10,19 @@ const gameSolutions = [
 ];
 
 function renderMenu() {
+  // game area container
   const gameArea = document.createElement("div");
   gameArea.id = "gameArea";
   document.body.appendChild(gameArea);
+  // menu  container
+  const menuContainer = document.createElement("div");
+  menuContainer.id = "menuContainer";
+  gameArea.appendChild(menuContainer);
+  // form
+  const menuForm = document.createElement("form");
+  menuForm.id = "menuForm";
+  menuContainer.appendChild(menuForm);
+  // Player 1 options
 }
 renderMenu();
 
@@ -26,7 +36,7 @@ function renderBoard() {
     cellElement.classList.add("board-piece");
     cellElement.id = index;
     cellElement.addEventListener("click", useTurn);
-    boardContainer.append(cellElement);
+    boardContainer.appendChild(cellElement);
   });
 }
 renderBoard();
