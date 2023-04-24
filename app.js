@@ -23,6 +23,24 @@ function renderMenu() {
   menuForm.id = "menuForm";
   menuContainer.appendChild(menuForm);
   // Player 1 options
+  // play 1 option area container
+  const inputBox = document.createElement("div");
+  inputBox.classList.add("input-box");
+  menuForm.appendChild(inputBox);
+  // p1o name label
+  const nameLabel = document.createElement("label");
+  nameLabel.setAttribute("for", "playerOneName");
+  nameLabel.classList.add("playerDetails");
+  nameLabel.textContent = "Enter Your Name: ";
+  inputBox.appendChild(nameLabel);
+  // p1o name input box
+  const nameInput = document.createElement("input");
+  nameInput.id = "playerName";
+  nameInput.setAttribute("name", "playerOneName");
+  nameInput.setAttribute("type", "text");
+  nameInput.setAttribute("maxlength", "24");
+  nameInput.setAttribute("Placeholder", "Player One's Name");
+  inputBox.appendChild(nameInput);
 }
 renderMenu();
 

@@ -29,19 +29,41 @@ body {
 #gameArea {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20rem;
 }
 /* MENU AREA */
 #menuContainer {
   height: 60rem;
-  width: 30rem;
+  width: 40rem;
   background-color: rgb(49, 49, 49);
   margin-top: 5rem;
   margin-left: 10rem;
   border: 4px #9ab8e4 solid;
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+.input-box {
+  margin-top: 5rem;
+  display: flex;
+  gap: 3rem;
+}
+.playerDetails {
+  color: #9ab8e4;
+  font-size: 2rem;
 }
 
+#playerName {
+  /* border: 2px solid #9ab8e4; */
+  color: #9ab8e4;
+  background-color: rgb(49, 49, 49);
+}
+#playerName:focus {
+  outline: none;
+  border: 1px solid #9ab8e4;
+}
+
+/* board area */
 #board-container {
   display: flex;
   flex-wrap: wrap;
