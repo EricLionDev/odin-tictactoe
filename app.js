@@ -40,9 +40,11 @@ function renderMenu() {
   nameInput.setAttribute("type", "text");
   nameInput.setAttribute("maxlength", "24");
   nameInput.setAttribute("Placeholder", "Player One's Name");
+  nameInput.setAttribute("required", true);
   inputBox.appendChild(nameInput);
 }
 renderMenu();
+renderBoard();
 
 function renderBoard() {
   const boardContainer = document.createElement("div");
@@ -57,7 +59,6 @@ function renderBoard() {
     boardContainer.appendChild(cellElement);
   });
 }
-renderBoard();
 
 function useTurn(e) {
   console.log(e.target.hasChildNodes());
