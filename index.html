@@ -8,6 +8,39 @@
     <title>Tic-Tac-Toe</title>
   </head>
   <header id="nav-bar"><div id="nav-title">Tic-Tac-Toe</div></header>
-  <body></body>
+  <body>
+    <div id="gameArea">
+      <div id="menuContainer">
+        <form id="menuForm">
+          <div class="input-box">
+            <label for="playerOneName" class="playerDetails"
+              >Enter Your Name: </label
+            ><input
+              id="playerName"
+              class="playerOptionInput"
+              name="playerOneName"
+              type="text"
+              maxlength="24"
+              placeholder="Player One's Name"
+              required="true"
+            />
+          </div>
+          <div class="input-box">
+            <label id="choiceLabel" class="playerDetails" name="pieceChoices"
+              >Choose your playing piece:</label
+            ><select
+              id="selectedPiece"
+              name="pieceChoices"
+              class="playerOptionInput"
+              placeholder="Player One's Name"
+            >
+              <option value="X" class="pieceSelectChoices">X</option>
+              <option value="O" class="pieceSelectChoices">O</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
 <script src="app.js"></script>
