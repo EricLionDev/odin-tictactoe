@@ -25,7 +25,7 @@ function renderBoard() {
   });
 }
 
-function useTurn(e, piece) {
+function useTurn(e) {
   console.log(e.target.hasChildNodes());
   if (!e.target.hasChildNodes()) {
     const moveSelected = document.createElement("div");

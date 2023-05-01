@@ -37,7 +37,7 @@ body {
 #menuContainer {
   /* height: 60rem;
   width: 40rem; */
-  padding: 3rem;
+  padding: 2rem;
   background-color: rgb(49, 49, 49);
   margin-top: 5rem;
   margin-left: 10rem;
@@ -67,6 +67,14 @@ body {
 .playerOptionInput:focus {
   outline: none;
   border: 2px solid #9ab8e4;
+}
+
+#submit-btn-container {
+  display: flex;
+  justify-content: center;
+}
+#submit-btn:hover {
+  background-color: rgb(56, 56, 56);
 }
 
 /* board area */
