@@ -35,8 +35,9 @@ body {
 }
 /* MENU AREA */
 #menuContainer {
-  height: 60rem;
-  width: 40rem;
+  /* height: 60rem;
+  width: 40rem; */
+  padding: 3rem;
   background-color: rgb(49, 49, 49);
   margin-top: 5rem;
   margin-left: 10rem;
@@ -45,7 +46,8 @@ body {
   justify-content: center;
 }
 .input-box {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  padding: 1.5rem 0;
   display: flex;
   gap: 3rem;
 }
