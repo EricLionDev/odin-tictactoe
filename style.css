@@ -49,6 +49,7 @@ body {
   /* margin-top: 2rem; */
   padding: 1.5rem 0;
   display: flex;
+
   gap: 3rem;
 }
 .playerDetails {
@@ -69,11 +70,13 @@ body {
   border: 2px solid #9ab8e4;
 }
 
-#submit-btn-container {
+#submit-btn-container,
+#restart-btn-container {
   display: flex;
   justify-content: center;
 }
-#submit-btn:hover {
+#submit-btn:hover,
+#restart-btn:hover {
   background-color: rgb(56, 56, 56);
 }
 
@@ -100,4 +103,9 @@ body {
   font-family: "Montserrat", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 14rem;
+}
+
+.winnerDetails {
+  font-size: 5rem;
+  color: #3a96ff;
 }

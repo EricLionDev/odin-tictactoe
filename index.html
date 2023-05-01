@@ -38,7 +38,33 @@
               <option value="O" class="pieceSelectChoices">O</option>
             </select>
           </div>
+          <div id="submit-btn-container" class="input-box">
+            <button
+              id="submit-btn"
+              class="playerOptionInput"
+              type="button"
+              onclick="setPlayers()"
+            >
+              Play
+            </button>
+          </div>
         </form>
+
+        <div id="turnDisplay">
+          <p id="turnInformation" class="playerDetails"></p>
+          <p id="winnerDisplay" class="winnerDetails"></p>
+
+          <div id="restart-btn-container" class="input-box">
+            <button
+              id="restart-btn"
+              class="playerOptionInput"
+              type="button"
+              onclick="location.reload()"
+            >
+              Restart
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
