@@ -9,6 +9,15 @@ const gameSolutions = [
   [3, 5, 7],
 ];
 
+function Player(num, piece) {
+  this.num = playerNumber;
+  this.piece = playerPiece;
+}
+
+function setPlayerInfo() {
+  let PlayerOne = new Player();
+}
+
 function renderMenu() {
   // game area container
   const gameArea = document.createElement("div");
@@ -83,6 +92,20 @@ function renderMenu() {
   chooseOptionO.textContent = "O";
   chooseOptionO.classList.add("pieceSelectChoices");
   choiceSelectElement.appendChild(chooseOptionO);
+
+  // submit button container
+  const submitContainer = document.createElement("div");
+  submitContainer.id = "submit-btn-container";
+  submitContainer.classList.add("input-box");
+  menuForm.appendChild(submitContainer);
+
+  //
+  const menuSubmit = document.createElement("button");
+  menuSubmit.id = "submit-btn";
+  menuSubmit.textContent = "Start";
+  menuSubmit.classList.add("playerOptionInput");
+  submitContainer.appendChild(menuSubmit);
+  menuSubmit.setAttribute("onClick", "startGame()");
 }
 renderMenu();
 renderBoard();
@@ -101,7 +124,7 @@ function renderBoard() {
   });
 }
 
-function useTurn(e, piece) {
+function useTurn(e) {
   console.log(e.target.hasChildNodes());
   if (!e.target.hasChildNodes()) {
     const moveSelected = document.createElement("div");
